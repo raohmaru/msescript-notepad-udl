@@ -6,7 +6,7 @@ Since MSE2 scripts have no kwown extension, you need to set manually the languag
 
 ## Installation
 
-1. Donwload [MSE_Script.xml](MSE_Script.xml)
+1. Donwload [MSE_Script.xml](https://raw.githubusercontent.com/raohmaru/msescript-notepad-udl/master/MSE_Script.xml)
 2. Open Notepad++
 3. Go to "Language > Define your language..."
 4. Click on "Import..." button, browse to the location where MSE_Script.xml was saved and open it
