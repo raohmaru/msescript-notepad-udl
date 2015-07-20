@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<!-- Created by raohmaru, see https://github.com/raohmaru/msescript-notepad-udl for latest version-->
+	<!-- language doesnt really mean anything, its more of a comment -->
+	<AutoComplete language="MSE Script">
+		<!--
+		Environment specifies how the language should be interpreted. ignoreCase makes autocomplete
+		ignore any casing, start and stopFunc specify what chars a function starts and stops with.
+		param specifies parameter separator and terminal can be used to specify a character that stops
+		any function. Using the same character for different functions results in undefined behaviour.
+		
+		05/11/2009
+		The basic word character are : A-Z a-z 0-9 and '_' 
+		If your function name contains other characters,
+		add your characters in "additionalWordChar" attribute (without separator)
+		in order to make calltip hint work
+		-->
+		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal="" additionalWordChar=""/>
+		<!--
+		The following items should be alphabetically ordered.
+		func="yes" means the keyword should be treated as a fuction, and thus can be used in the parameter
+		calltip system. If this is the case, the retVal attribute specifies the return value/type. Any
+		following Param tag specifies a parameter, they must be in order. The name attributes specifies
+		the parameter name.
+		-->
+		<KeyWord name="abs" func="yes">
+			<Overload retVal="" descr="Absolute value" />
+		</KeyWord>
+		<KeyWord name="assert" func="yes">
+			<Overload retVal="" descr="Check a condition for debugging purposes." />
+		</KeyWord>
+		<KeyWord name="break_text" func="yes">
+			<Overload retVal="" descr="Break text into parts each matching a regular expression." />
+		</KeyWord>
+		<KeyWord name="built_in_image" func="yes">
+			<Overload retVal="" descr="Return an image built into the program." />
+		</KeyWord>
+		<KeyWord name="card" />
+		<KeyWord name="cards" />
+		<KeyWord name="check_spelling" func="yes">
+			<Overload retVal="" descr="Check text for spelling errors." />
+		</KeyWord>
+		<KeyWord name="chosen" func="yes">
+			<Overload retVal="" descr="Is the given choice selected in a multiple choice value?" />
+		</KeyWord>
+		<KeyWord name="combine_blend" func="yes">
+			<Overload retVal="" descr="Blend two images together using a given combining mode." />
+		</KeyWord>
+		<KeyWord name="combined_editor" func="yes">
+			<Overload retVal="" descr="Use one field to edit multiple others." />
+		</KeyWord>
+		<KeyWord name="contains" func="yes">
+			<Overload retVal="" descr="Does a string contain another one?" />
+		</KeyWord>
+		<KeyWord name="copy_file" func="yes">
+			<Overload retVal="" descr="Copy a file from the export template to the output directory." />
+		</KeyWord>
+		<KeyWord name="count_chosen" func="yes">
+			<Overload retVal="" descr="Count then number of choices selected in a multiple choice value." />
+		</KeyWord>
+		<KeyWord name="crop" func="yes">
+			<Overload retVal="" descr="Crop an image, giving only a small subset of it." />
+		</KeyWord>
+		<KeyWord name="curly_quotes" func="yes">
+			<Overload retVal="" descr="Make quotes curly." />
+		</KeyWord>
+		<KeyWord name="directory" />
+		<KeyWord name="drop_shadow" func="yes">
+			<Overload retVal="" descr="Add a drop shadow to an image." />
+		</KeyWord>
+		<KeyWord name="english_number" func="yes">
+			<Overload retVal="" descr="Convert a number to text ('one', 'two', etc.)" />
+		</KeyWord>
+		<KeyWord name="english_number_a" func="yes">
+			<Overload retVal="" descr="Convert a number to text ('a', 'two', etc.)" />
+		</KeyWord>
+		<KeyWord name="english_number_multiple" func="yes">
+			<Overload retVal="" descr="Convert a number to text ('', 'two', etc.)" />
+		</KeyWord>
+		<KeyWord name="english_number_ordinal" func="yes">
+			<Overload retVal="" descr="Convert a number to text ('first', 'second', etc.)" />
+		</KeyWord>
+		<KeyWord name="english_plural" func="yes">
+			<Overload retVal="" descr="Find the plural of a word ('card' to 'cards')." />
+		</KeyWord>
+		<KeyWord name="english_singular" func="yes">
+			<Overload retVal="" descr="Find the singular of a word, 'cards' -> 'card'." />
+		</KeyWord>
+		<KeyWord name="enlarge" func="yes">
+			<Overload retVal="" descr="Enlarge an image by putting a border around it." />
+		</KeyWord>
+		<KeyWord name="exclusive_choice" func="yes">
+			<Overload retVal="" descr="Require that at most one of the given choices is selected." />
+		</KeyWord>
+		<KeyWord name="expand_keywords" func="yes">
+			<Overload retVal="" descr="Expand the keywords in a piece of text." />
+		</KeyWord>
+		<KeyWord name="filter_list" func="yes">
+			<Overload retVal="" descr="Filter a list, keeping only elements that match a predicate." />
+		</KeyWord>
+		<KeyWord name="filter_text" func="yes">
+			<Overload retVal="" descr="Keep only the text matching a regular expression." />
+		</KeyWord>
+		<KeyWord name="flip_horizontal" func="yes">
+			<Overload retVal="" descr="Flip an image horizontally." />
+		</KeyWord>
+		<KeyWord name="flip_vertical" func="yes">
+			<Overload retVal="" descr="Flip an image vertically." />
+		</KeyWord>
+		<KeyWord name="forward_editor" func="yes">
+			<Overload retVal="" descr="Use one field to edit another." />
+		</KeyWord>
+		<KeyWord name="game" />
+		<KeyWord name="invert_image" func="yes">
+			<Overload retVal="" descr="Invert the colors of an image." />
+		</KeyWord>
+		<KeyWord name="keyword_usage" func="yes">
+			<Overload retVal="" descr="What keywords are used on a card, and how often are they used?" />
+		</KeyWord>
+		<KeyWord name="length" func="yes">
+			<Overload retVal="" descr="Return the number of items in a list." />
+		</KeyWord>
+		<KeyWord name="linear_blend" func="yes">
+			<Overload retVal="" descr="Blend two images together using a linear gradient." />
+		</KeyWord>
+		<KeyWord name="masked_blend" func="yes">
+			<Overload retVal="" descr="Blend two images together using a third mask image." />
+		</KeyWord>
+		<KeyWord name="match" func="yes">
+			<Overload retVal="" descr="Does a string match a regular expression?" />
+		</KeyWord>
+		<KeyWord name="max(a,b,c,...)" func="yes">
+			<Overload retVal="" descr="Largest of the values" />
+		</KeyWord>
+		<KeyWord name="min(a,b,c,...)" func="yes">
+			<Overload retVal="" descr="Smallest of the values" />
+		</KeyWord>
+		<KeyWord name="new_card" func="yes">
+			<Overload retVal="" descr="Construct a new card object." />
+		</KeyWord>
+		<KeyWord name="number_of_items" func="yes">
+			<Overload retVal="" descr="Return the number of items in a list." />
+		</KeyWord>
+		<KeyWord name="options" />
+		<KeyWord name="position" func="yes">
+			<Overload retVal="" descr="Find the position of an element in a list." />
+		</KeyWord>
+		<KeyWord name="primary_choice" func="yes">
+			<Overload retVal="" descr="Return the top level choice chosen from a choice field." />
+		</KeyWord>
+		<KeyWord name="process_english_hints" func="yes">
+			<Overload retVal="" descr="Process the hints left by english_ functions in a keyword's reminder text." />
+		</KeyWord>
+		<KeyWord name="random_boolean" func="yes">
+			<Overload retVal="" descr="Generate a random boolean." />
+		</KeyWord>
+		<KeyWord name="random_int" func="yes">
+			<Overload retVal="" descr="Generate a random number." />
+		</KeyWord>
+		<KeyWord name="random_real" func="yes">
+			<Overload retVal="" descr="Generate a random real number." />
+		</KeyWord>
+		<KeyWord name="random_select" func="yes">
+			<Overload retVal="" descr="Pick a random element from a list." />
+		</KeyWord>
+		<KeyWord name="random_select_many" func="yes">
+			<Overload retVal="" descr="Pick multiple random elements from a list." />
+		</KeyWord>
+		<KeyWord name="random_shuffle" func="yes">
+			<Overload retVal="" descr="Randomly shuffle a list." />
+		</KeyWord>
+		<KeyWord name="recolor_image" func="yes">
+			<Overload retVal="" descr="Change the colors of an image to match the font color." />
+		</KeyWord>
+		<KeyWord name="regex_escape" func="yes">
+			<Overload retVal="" descr="Escape a string for use in a regular expression." />
+		</KeyWord>
+		<KeyWord name="remove_choice" func="yes">
+			<Overload retVal="" descr="Remove the given choices from a multiple choice value." />
+		</KeyWord>
+		<KeyWord name="remove_tag" func="yes">
+			<Overload retVal="" descr="Remove a tag, keep the contents." />
+		</KeyWord>
+		<KeyWord name="remove_tags" func="yes">
+			<Overload retVal="" descr="Remove all tags from tagged text." />
+		</KeyWord>
+		<KeyWord name="replace" func="yes">
+			<Overload retVal="" descr="Replace text matching a regular expression." />
+		</KeyWord>
+		<KeyWord name="require_choice" func="yes">
+			<Overload retVal="" descr="Require that at least one of the given choices is selected." />
+		</KeyWord>
+		<KeyWord name="require_exclusive_choice" func="yes">
+			<Overload retVal="" descr="Require that exactly one of the given choices is selected." />
+		</KeyWord>
+		<KeyWord name="reverse" func="yes">
+			<Overload retVal="" descr="Reverse a string." />
+		</KeyWord>
+		<KeyWord name="rgb(r,g,b)" func="yes">
+			<Overload retVal="" descr="A color value" />
+		</KeyWord>
+		<KeyWord name="rotate" func="yes">
+			<Overload retVal="" descr="Rotate an image." />
+		</KeyWord>
+		<KeyWord name="saturate" func="yes">
+			<Overload retVal="" descr="Saturate/desaturate an image." />
+		</KeyWord>
+		<KeyWord name="set" />
+		<KeyWord name="set_alpha" func="yes">
+			<Overload retVal="" descr="Change the transparency of an image." />
+		</KeyWord>
+		<KeyWord name="set_combine" func="yes">
+			<Overload retVal="" descr="Change how the image should be combined with the background." />
+		</KeyWord>
+		<KeyWord name="set_mask" func="yes">
+			<Overload retVal="" descr="Set the transparancy mask of an image." />
+		</KeyWord>
+		<KeyWord name="sort_list" func="yes">
+			<Overload retVal="" descr="Sort a list." />
+		</KeyWord>
+		<KeyWord name="sort_text" func="yes">
+			<Overload retVal="" descr="Sort the letters in a string using a custom order." />
+		</KeyWord>
+		<KeyWord name="split_text" func="yes">
+			<Overload retVal="" descr="Split text into parts separated by a regular expression." />
+		</KeyWord>
+		<KeyWord name="style" />
+		<KeyWord name="styling" />
+		<KeyWord name="substring" func="yes">
+			<Overload retVal="" descr="Extract a part of a string." />
+		</KeyWord>
+		<KeyWord name="symbol_variation" func="yes">
+			<Overload retVal="" descr="Render a variation of a symbol." />
+		</KeyWord>
+		<KeyWord name="symbols_to_html" func="yes">
+			<Overload retVal="" descr="Convert text to html using a symbol font." />
+		</KeyWord>
+		<KeyWord name="tag_contents" func="yes">
+			<Overload retVal="" descr="Change the contents of a specific tag." />
+		</KeyWord>
+		<KeyWord name="to_boolean" func="yes">
+			<Overload retVal="" descr="Convert any value to a boolean" />
+		</KeyWord>
+		<KeyWord name="to_color" func="yes">
+			<Overload retVal="" descr="Convert any value to a color" />
+		</KeyWord>
+		<KeyWord name="to_date" func="yes">
+			<Overload retVal="" descr="Convert any value to a date" />
+		</KeyWord>
+		<KeyWord name="to_html" func="yes">
+			<Overload retVal="" descr="Convert tagged text to html." />
+		</KeyWord>
+		<KeyWord name="to_image" func="yes">
+			<Overload retVal="" descr="Convert any value to an image" />
+		</KeyWord>
+		<KeyWord name="to_int" func="yes">
+			<Overload retVal="" descr="Convert any value to a number" />
+		</KeyWord>
+		<KeyWord name="to_lower" func="yes">
+			<Overload retVal="" descr="Convert a string to lower case." />
+		</KeyWord>
+		<KeyWord name="to_number" func="yes">
+			<Overload retVal="" descr="Convert any value to a number" />
+		</KeyWord>
+		<KeyWord name="to_real" func="yes">
+			<Overload retVal="" descr="Convert any value to a real number" />
+		</KeyWord>
+		<KeyWord name="to_string" func="yes">
+			<Overload retVal="" descr="Convert any value to a string" />
+		</KeyWord>
+		<KeyWord name="to_text" func="yes">
+			<Overload retVal="" descr="Remove all tags from tagged text, and convert it to a string." />
+		</KeyWord>
+		<KeyWord name="to_title" func="yes">
+			<Overload retVal="" descr="Convert a string to title case." />
+		</KeyWord>
+		<KeyWord name="to_upper" func="yes">
+			<Overload retVal="" descr="Convert a string to upper case." />
+		</KeyWord>
+		<KeyWord name="trace" func="yes">
+			<Overload retVal="" descr="Output a message for debugging purposes." />
+		</KeyWord>
+		<KeyWord name="trim" func="yes">
+			<Overload retVal="" descr="Remove leading and trailing whitespace from a string." />
+		</KeyWord>
+		<KeyWord name="write_image_file" func="yes">
+			<Overload retVal="" descr="Write an image file to the output directory." />
+		</KeyWord>
+		<KeyWord name="write_set_file" func="yes">
+			<Overload retVal="" descr="Write a MSE set file to the output directory." />
+		</KeyWord>
+		<KeyWord name="write_text_file" func="yes">
+			<Overload retVal="" descr="Write a text file to the output directory." />
+		</KeyWord>
+	</AutoComplete>
+</NotepadPlus>
