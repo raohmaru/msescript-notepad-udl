@@ -26,6 +26,8 @@
 		<KeyWord name="card" />
 		<KeyWord name="cards" />
 		<KeyWord name="game" />
+		<KeyWord name="input" />
+		<KeyWord name="last_change" />
 		<KeyWord name="style" />
 		<KeyWord name="styling" />
 		<KeyWord name="options" />
@@ -71,10 +73,10 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="abs" func="yes">
-			<Overload retVal="[[number]]" descr="Absolute value">
+			<Overload retVal="[[real number]]" descr="Absolute value">
 				<Param name="number or real number" />
 			</Overload>
-		</KeyWord>
+		</KeyWord>		
 		<KeyWord name="random_int" func="yes">
 			<Overload retVal="[[number]]" descr="Generate a random number">
 				<Param name="number" />
@@ -563,6 +565,62 @@
 				<Param name="[...number or real number]" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="sin" func="yes">
+			<Overload retVal="[[real number]]" descr="Sine of an angle in radians">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cos" func="yes">
+			<Overload retVal="[[real number]]" descr="Cosine of an angle in radians">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tan" func="yes">
+			<Overload retVal="[[real number]]" descr="Tangent of an angle in radians">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sin_deg" func="yes">
+			<Overload retVal="[[real number]]" descr="Sine of an angle in degrees">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cos_deg" func="yes">
+			<Overload retVal="[[real number]]" descr="Cosine of an angle in degrees">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tan_deg" func="yes">
+			<Overload retVal="[[real number]]" descr="Tangent of an angle in degrees">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="exp" func="yes">
+			<Overload retVal="[[real number]]" descr="Computes the base-e exponential function">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log" func="yes">
+			<Overload retVal="[[real number]]" descr="Computes the natural logarithm">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log10" func="yes">
+			<Overload retVal="[[real number]]" descr="Computes the common (base-10) logarithm">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sqrt" func="yes">
+			<Overload retVal="[[real number]]" descr="Square root of a number">
+				<Param name="real number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pow" func="yes">
+			<Overload retVal="[[number]]" descr="Raise a number to power exponent">
+				<Param name="real number" />
+				<Param name="exponent: number" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="rgb" func="yes">
 			<Overload retVal="[[color]]" descr="Creates a color value">
 				<Param name="number red" />
@@ -576,6 +634,11 @@
 				<Param name="number green" />
 				<Param name="number blue" />
 				<Param name="number alpha" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="to_code" func="yes">
+			<Overload retVal="[[string]]" descr="Convert any value to a string">
+				<Param name="any type" />
 			</Overload>
 		</KeyWord>
 	</AutoComplete>
