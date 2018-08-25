@@ -183,7 +183,7 @@
 			</Overload>
 		</KeyWord>
 		<KeyWord name="check_spelling" func="yes">
-			<Overload retVal="[[string]]" descr="Check the spelling of a piece of text, and mark errors with <error-spelling> tags">
+			<Overload retVal="[[string]]" descr="Check the spelling of a piece of text, and mark errors with &lt;error-spelling&gt; tags">
 				<Param name="tagged string" />
 				<Param name="language: string" />
 				<Param name="[extra_dictionary: string]" />
